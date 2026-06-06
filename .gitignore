@@ -1,0 +1,27 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Datos procesados — generados al ejecutar el notebook (no rastrear)
+data/clean_data/
+*.pkl
+*.pickle
+
+# IDE
+.vscode/
+.idea/
