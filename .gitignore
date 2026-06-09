@@ -18,10 +18,17 @@ env/
 **/.ipynb_checkpoints/
 
 # Datos procesados — generados al ejecutar el notebook (no rastrear)
-data/clean_data/
+DATA/clean_data/
 *.pkl
 *.pickle
 
 # IDE
 .vscode/
 .idea/
+
+# Material de trabajo interno — no forma parte de la entrega
+Archivos_md*/
+*.pptx
+_build_presentacion_v3.py
+notebook/online_retail_II_EDA-basic.ipynb
+/Fidelizacion_Recompra_ML_Pujana.ipynb

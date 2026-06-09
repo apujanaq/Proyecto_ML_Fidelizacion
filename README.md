@@ -93,7 +93,7 @@ Transformaciones aplicadas: `log1p` en recencia, frecuencia, monetario y antigü
 Proyecto-ML-Fidelizacion/
 ├── notebook/
 │   └── Fidelizacion_Recompra_ML_Pujana.ipynb   ← notebook principal (147 celdas)
-├── data/
+├── DATA/
 │   └── raw_data/
 │       ├── online_retail_II.xlsx - Year 2009-2010.csv
 │       └── online_retail_II.xlsx - Year 2010-2011.csv
@@ -136,7 +136,7 @@ jupyter lab
 
 Abrir `notebook/Fidelizacion_Recompra_ML_Pujana.ipynb` y ejecutar **Kernel → Restart & Run All**.
 
-El notebook genera automáticamente todos los archivos procesados (`.pkl`) en `data/clean_data/`. La primera ejecución tarda ~3–5 minutos (sección 7 — Optuna con 60 trials).
+El notebook **crea automáticamente la carpeta `DATA/clean_data/`** y genera ahí todos los archivos procesados (`.pkl`). No es necesario crearla a mano. La primera ejecución tarda ~3–5 minutos (sección 7 — Optuna con 60 trials).
 
 ### Tiempos de ejecución estimados
 
@@ -173,7 +173,7 @@ El notebook genera automáticamente todos los archivos procesados (`.pkl`) en `d
 - **Segmento de mayor ROI:** clientes con probabilidad 40–70% (*Media*) — la mayoría del test set se concentra aquí.
 - **Variable más influyente:** recencia — con efecto no lineal identificado por SHAP (umbral crítico ~200–250 días).
 - **Punto ciego del modelo:** compradores estacionales (alto `distancia_temporal_media`) — clasificados en Baja pero fielmente recurrentes cada año.
-- **Entregable de negocio:** `data/clean_data/preprocessed/lista_clientes_probabilidad.csv` — lista completa con probabilidad, segmento y RFM para el equipo comercial (generado al ejecutar el notebook).
+- **Entregable de negocio:** `DATA/clean_data/preprocessed/lista_clientes_probabilidad.csv` — lista completa con probabilidad, segmento y RFM para el equipo comercial (generado al ejecutar el notebook).
 
 ---
 
